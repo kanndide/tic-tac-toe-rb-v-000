@@ -102,7 +102,6 @@ end
 
 def play(board)
   until over?(board) == true
-    display_board(board)
     turn(board)
   end
   if winner(board) != nil
