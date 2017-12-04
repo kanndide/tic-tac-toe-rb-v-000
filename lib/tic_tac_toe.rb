@@ -89,7 +89,7 @@ def draw?(board)
 end
 
 def over?(board)
-  full?(board) == true || won?(board).is_a?(Array)
+  draw?(board) == true || won?(board).is_a?(Array)
 end
 
 def winner(board)
